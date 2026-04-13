@@ -1,7 +1,6 @@
 # LEMP Stack with Laravel(docker environment)
 ## １．プロジェクト概要
-Dockerを使用して構築したLEMP環境（Nginx, MySQL, PHP-FPM）上で、Laravel 8.x を動作させるためのテストプロジェクトです。
-リポジトリをクローンするだけで、コマンド一つでLaravelの初期セットアップまで完了するように設計されています。
+自作の開発環境（LEMP + Laravel + LocalStack）をベースに、AWSの機能を使用した、画像保存・加工・共有アプリを作成する学習用プロジェクトです。
 
 ## ２．ディレクトリ構成
 ```
@@ -31,47 +30,50 @@ Dockerを使用して構築したLEMP環境（Nginx, MySQL, PHP-FPM）上で、L
 以下の手順を実行することで、ローカル環境にLaravel+LocalStack（S3, RDS）環境を立ち上げます。
 
 1. リポジトリのクローン
-```
-$ git clone https://www.github.com/ykamio3872-max/LEMP_Laravel_test.git
-$ cd LEMP_Laravel_test
-```
+    ```
+    $ git clone https://www.github.com/ykamio3872-max/LEMP_Laravel_test.git
+    $ cd LEMP_Laravel_test
+    ```
 2. 環境変数の設定\
 `.env.example`に以下の値を入力し、ファイル名を`.env`に変更してください。
 
-```
-DB_DATABASE=laravel_db
-DB_USERNAME=user 
-DB_PASSWORD=password 
-DB_ROOT_PASSWORD=password
+    ```
+    DB_DATABASE=laravel_db
+    DB_USERNAME=user 
+    DB_PASSWORD=password 
+    DB_ROOT_PASSWORD=password
 
-AWS_ACCESS_KEY_ID=test
-AWS_SECRET_ACCESS_KEY=test 
-AWS_DEFAULT_REGION=ap-northeast-1
-AWS_USE_PATH_STYLE_ENDPOINT=true
-AWS_ENDPOINT=http://aws:4566
-AWS_LOCAL_ENDPOINT=http://aws:4566
+    AWS_ACCESS_KEY_ID=test
+    AWS_SECRET_ACCESS_KEY=test 
+    AWS_DEFAULT_REGION=ap-northeast-1
+    AWS_USE_PATH_STYLE_ENDPOINT=true
+    AWS_ENDPOINT=http://aws:4566
+    AWS_LOCAL_ENDPOINT=http://aws:4566
 
-LOCALSTACK_SERVICES=s3,rds
+    LOCALSTACK_SERVICES=s3,rds
 
-AWS_URL=http://localhost:4566/my-test-bucket
-```
+    AWS_URL=http://localhost:4566/my-test-bucket
+    ```
 
 3. コンテナの起動と自動インストール
+
+    docker engineが起動していることを確認の上で、ホストOSごとに以下の手順を実行してください。
+
 - **For Mac/Linux**\
 ディレクトリのルートで以下のコマンドを実行してください。
 
-```bash
-$ chmod +x setup.sh
-$ ./setup.sh
-```
+    ```bash
+    $ chmod +x setup.sh
+    $ ./setup.sh
+    ```
 - **For Windows**\
-Windowsでは、Gitをインストールした際に一緒に導入される**Git Bash**を使用して実行することを推奨します。\
-     1. プロジェクトのルートディレクトリで右クリックし、**Git Bash Here**を選択します。\
+Windowsでは、Gitをインストールした際に一緒に導入される**Git Bash**を使用して実行することを推奨します。
+     1. プロジェクトのルートディレクトリで右クリックし、**Git Bash Here**を選択します。
      2. 以下のコマンドを実行してください。
 
-```bash
-$ sh setup.sh
-```
+    ```bash
+    $ sh setup.sh
+    ```
 - [!NOTE]Windowsの標準コマンドプロンプトやPowerShell上で直接`./setup.sh`は動作しません。\
 必ず`Git Bash`または`WSL2`上のターミナルを使用してください。
 
@@ -109,15 +111,15 @@ $ sh setup.sh
 * **Framework**: Laravel 8.x
 * **LocalStack**: LocalStack 3.4.0
 
+    いずれも前プロジェクトで検証済みの安定版を使用。
+
 ## 8. 更新履歴
-* **2026-04-10**: README更新、システム構成図追加。
-* **2026-04-08**: s3バケットとデータベースの連携に成功。
-* **2026-04-03**: setup.shの実装と自動化に成功。
-* **2026-04-03**: LocalStackのバージョン固定/画像アップロード・削除機能実装。
-* **2026-03-25**: Localstack+AWS環境を試験的に実装。
-* **2026-03-24**: `README.md`作成、クローンテストに成功。
-* **2026-03-23**: リポジトリ作成
+* **2026-04-13**: リポジトリ作成
 
 ## 9. ライセンス
 
 このプロジェクトは **MITライセンス** のもとで公開されています。詳細については、プロジェクト内に同梱されている [LICENSE](./LICENSE) ファイルを参照してください。
+
+## 10. リンク
+* 自作の開発環境構築プロジェクトへのリンク\
+    `https://www.github.com/yskamioyc-cmyk/LEMP_Laravel_test.git`
