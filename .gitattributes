@@ -1,0 +1,10 @@
+# デフォルトでテキストファイルは改行コードを自動管理
+* text=auto
+
+# シェルスクリプト（.sh）は常に LF として扱う
+*.sh text eol=lf
+
+# 必要であれば、設定ファイルなども LF に固定
+*.ini text eol=lf
+*.env text eol=lf
+Dockerfile text eol=lf
