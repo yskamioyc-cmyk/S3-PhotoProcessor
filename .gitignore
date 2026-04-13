@@ -1,7 +1,6 @@
 ##  環境変数ファイル
 .env
 
-##  Laravelのソースコード一式を除外（ディレクトリ自体は残す）
-/src/*
-!/src/.gitkeep
+##  Laravelの環境変数ファイルのみを除外
+/src/.env
 
