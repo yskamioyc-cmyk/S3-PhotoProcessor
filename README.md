@@ -1,4 +1,4 @@
-# LEMP Stack with Laravel(docker environment)
+# S3-PhotoProcessor (LEMP + Laravel + LocalStack environment)
 ## １．プロジェクト概要
 自作の開発環境（LEMP + Laravel + LocalStack）をベースに、AWSの機能を使用した、画像保存・加工・共有アプリを作成する学習用プロジェクトです。
 
