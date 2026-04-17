@@ -28,7 +28,7 @@
 ## 2.2 データベース設計
 ER図
 
-![ER図](./images/er-test.png)
+![ER図](./images/er_v.1.1.0.png)
 
 
 
