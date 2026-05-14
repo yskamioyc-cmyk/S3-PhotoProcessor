@@ -5,7 +5,7 @@
 
 ## 画面共通レイアウト
 <p align= "center">
-    <img src="../../images/AUTH-010_SP0000.png" width="70%">
+    <img src="../../images/AUTH-010_SL0000.png" width="70%">
 </p>
 
 - 共通事項はヘッダとフッタの内容。

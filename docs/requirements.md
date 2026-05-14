@@ -39,7 +39,7 @@
 ER図
 
 <p align="center">
-  <img src="./images/er_v.1.1.0.png" width="400">
+  <img src="./images/ER-diagram_v.1.2.0.drawio.png" width="70%">
 </p>
 
 - ユーザー情報は「ユーザーテーブル」で管理を行う。user_idを、レコードを一意に定める主キーとし、user_name(表示名)、user_address(メールアドレス)、user_password(パスワード)を紐づけて管理する。
