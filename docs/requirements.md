@@ -51,7 +51,7 @@ ER図
 - フロントエンド
 
 <p align="center">
-  <img src="./images/function_list_2.png" width="70%">
+  <img src="./images/function-list_2.png" width="70%">
 </p>
 
 
