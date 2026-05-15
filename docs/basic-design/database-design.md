@@ -5,7 +5,7 @@
 
 ## ER図
 <p align= "center">
-    <img src="../images/ER-diagram_v.1.2.0.drawio.png" width="70%">
+    <img src="../images/ER-diagram_v.1.3.0.png" width="70%">
 </p>
 
 
