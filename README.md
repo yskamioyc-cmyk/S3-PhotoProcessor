@@ -5,25 +5,27 @@
 ## ２．ディレクトリ構成
 ```
 .
-│  .env.example                 #   .envファイル作成用テンプレート
-│  .gitattributes
-│  .gitignore
-│  docker-compose.yml
-│  README.md
-│  setup.sh
-│  
-├─docker
-│  ├─app     
-│  ├─aws
-│  ├─db    
-│  └─web        
-├─EXAMPLES
-│      .env.laravel.example     #   Laravelの.envへの転記用ファイル
-│      web.php                  #   EXAMPLESディレクトリ内のファイルはsetup.shで使います
-│      welcome.blade.php
-│      
-└─images
-        LEMP_Laravel_test.png
+|-- EXAMPLES
+|   |-- web.php
+|   `-- welcome.blade.php
+|-- LICENSE
+|-- README.md
+|-- docker
+|   |-- app
+|   |-- aws
+|   |-- db
+|   `-- web
+|-- docker-compose.yml
+|-- docs
+|   |-- basic-design    # 基本設計書
+|   |-- images
+|   `-- requirements.md     # 要件定義書
+|-- images
+|   |-- LEMP_Laravel_test.png
+|   |-- S3-PhotoProcessor.png
+|   `-- er-test.png
+|-- setup.sh
+`-- src
 ```
 
 ## ３．セットアップ手順
