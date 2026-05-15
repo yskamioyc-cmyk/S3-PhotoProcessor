@@ -137,5 +137,4 @@ Windowsでは、Gitをインストールした際に一緒に導入される**Gi
 このプロジェクトは **MITライセンス** のもとで公開されています。詳細については、プロジェクト内に同梱されている [LICENSE](./LICENSE) ファイルを参照してください。
 
 ## 10. リンク
-* 自作の開発環境構築プロジェクトへのリンク\
-    `https://www.github.com/yskamioyc-cmyk/LEMP_Laravel_test.git`
+* [自作の開発環境構築プロジェクトへのリンク](https://www.github.com/yskamioyc-cmyk/LEMP_Laravel_test.git)
