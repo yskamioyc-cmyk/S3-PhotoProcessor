@@ -46,8 +46,8 @@
 
 1. リポジトリのクローン
     ```
-    $ git clone https://www.github.com/ykamio3872-max/LEMP_Laravel_test.git
-    $ cd LEMP_Laravel_test
+    $ git clone https://www.github.com/yskamioyc-cmyk/S3-PhotoProcessor.git
+    $ cd S3-PhotoProcessor
     ```
 2. 環境変数の設定\
 `.env.example`に以下の値を入力し、ファイル名を`.env`に変更してください。
