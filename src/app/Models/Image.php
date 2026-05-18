@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Image extends Model
 {
     use HasFactory;
-    protected $fillable = ["file_name", "s3_path"];
+    protected $fillable = ["file_name", "s3_key", "mime_type", "title", "author", "version", "size"];
 }
