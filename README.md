@@ -68,6 +68,7 @@
     LOCALSTACK_SERVICES=s3,rds
 
     AWS_URL=http://localhost:4566/my-test-bucket
+
     ```
 
 3. コンテナの起動と自動インストール
@@ -78,8 +79,10 @@
 ディレクトリのルートで以下のコマンドを実行してください。
 
     ```bash
+
     $ chmod +x setup.sh
     $ ./setup.sh
+
     ```
 - **For Windows**\
 Windowsでは、Gitをインストールした際に一緒に導入される**Git Bash**を使用して実行することを推奨します。
@@ -87,13 +90,27 @@ Windowsでは、Gitをインストールした際に一緒に導入される**Gi
      2. 以下のコマンドを実行してください。
 
     ```bash
+
     $ sh setup.sh
+
     ```
 - [!NOTE]Windowsの標準コマンドプロンプトやPowerShell上で直接`./setup.sh`は動作しません。\
 必ず`Git Bash`または`WSL2`上のターミナルを使用してください。
 
 ## 4. 動作確認
 * **Webサイト**:`http://localhost:8081`(環境によりポートは異なります)
+* 正常に動作している場合、以下の画面が表示されます。
+
+<p align="center">
+  <img src="./images/S3-PhotoProcessor_home.png" width="70%">
+</p>
+
+* 画像アップロードに成功した場合、以下の画面に遷移します。
+
+<p align="center">
+    <img src="./images/S3-PhotoProcessor_uploaded.png" width="70%">
+</p>
+
 * **MYSQL直接接続**:
     ```
     $ docker compose exec db mysql -u root -p
@@ -103,8 +120,9 @@ Windowsでは、Gitをインストールした際に一緒に導入される**Gi
     バケット作成に成功しているとjson形式で情報が表示されます。
 
 ## 5. システム構成図
-
-![システム構成図](images/LEMP_Laravel_test.png)
+<p align="center">
+    <img src="./images/LEMP_Laravel_test.png" width="70%">
+</p>
 
 ## 6. トラブルシューティング・注意事項
 
